@@ -1,0 +1,83 @@
+#no {
+    position: absolute; /* Must be absolute for random positioning within the viewport */
+    transition: all 0.4s ease; /* Smooth transition */
+    z-index: 1000;
+}
+
+#imageContainer{
+    position: absolute; 
+    top: 40% ; 
+    left: 45% ;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: imageContainer 2s infinite;
+}
+
+ @keyframes imageContainer {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+#valentine{
+    color: #1a2a3a;
+background-image: linear-gradient(45deg, #1c0f4a , #8e3cd9 50%, #f72cff 100%);  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.valentineDiv{
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS */
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 50px;
+  width: 80px;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.25em 0.75em;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #video {
+    width:100vw;
+    height: 75vh;
+  }
+}
+
+
+
