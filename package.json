@@ -4,7 +4,7 @@
   "description": "",
   "main": "home.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "mkdir -p dist && cp -r index.html home.css home.js dist/"
   },
   "repository": {
     "type": "git",
