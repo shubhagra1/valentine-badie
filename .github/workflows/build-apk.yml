@@ -36,6 +36,11 @@ jobs:
           distribution: temurin
           java-version: 17
 
+       # 🔹 Fix for gradlew permission
+      - name: Make Gradle wrapper executable
+        working-directory: android
+        run: chmod +x gradlew
+        
       - name: Build APK
         working-directory: android
         run: ./gradlew assembleDebug
